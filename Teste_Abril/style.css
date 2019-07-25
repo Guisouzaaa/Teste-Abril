@@ -1,0 +1,466 @@
+
+body{
+    background-color: #f4f4f4;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+#banner{
+    margin: 5px 0;
+    min-width: 50%;
+    height: 70px;
+}
+
+#logo{
+    width: 150px;
+    height: 50px;
+    margin-right: 50px;
+}
+
+.bg-red{
+    background-color: rgb(241, 23, 23);
+    color: #fff;
+}
+
+#menu a{
+    color: #fff;
+    font-weight: bold;
+    font-size: .75rem;
+    margin-left: 5px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+#sub-menu{
+    padding: 0;
+    background-color: #222!important;
+}
+
+#sub-menu .navbar-brand{
+    padding:  0;
+}
+
+#sub-menu a{
+    color: #fff;
+    padding: 5px 15px;
+    margin: 0;
+    font-weight: bold;
+    font-size: .6rem;
+    text-transform: uppercase;
+}
+
+#sub-menu a:hover{
+    color: #aaa;
+}
+
+#input-pesquisa{
+    height: 27px;
+    width: 70%;
+    margin-left: 5px;
+}
+
+#input-pesquisa::placeholder{
+    padding: 5px;
+}
+
+#ad_fusca{
+    height: 100%;
+    width: 100%;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1.7fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-top: 5px;
+}
+
+.fas{
+    color: red;
+    margin: 0 7px;
+}
+
+.grid-container a:hover{
+    text-decoration: underline;
+    color: #fff;
+}
+
+.grid-boxes{
+    position: relative;
+
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    text-align: right;
+}
+
+.grid-boxes h2{
+    color: #fff;
+    text-transform: uppercase;
+    text-align: right;
+    margin-right: 10px;
+    font-size: 1rem;
+}
+
+.grid-boxes p{
+    text-align: right;
+    margin: 0;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: .8rem;
+}
+
+.box-1{
+    grid-row: 1 /-1;
+    background: url("../img/carro1.jpeg") no-repeat right top/cover;
+}
+
+.box-1 h2{ 
+    font-size: 1.5rem;
+}
+
+.box-2{
+    background: url("../img/carro2.jpg") no-repeat center/cover;
+}
+
+.box-3{
+    background: url("../img/carro3.jpg") no-repeat top left/cover;
+}
+
+.box-4{
+    background: url("../img/carro4.jpg") no-repeat center/cover;
+}
+
+.box-4 p{
+    background-color: red;
+    padding: 0 5px;
+}
+
+
+.card{
+    border: 0;
+    background-color: #f4f4f4;
+}
+
+.card-body{
+    margin:0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    min-height: 130px;
+}
+
+.card-text{
+    min-height: 10px;
+    margin-top: auto;
+}
+
+.card h5{
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin: 10px 0 0 10px;
+}
+
+.card p{
+    font-size: .9rem;
+    margin-left: 10px;
+}
+
+.card a{
+    font-size: .8rem;
+    text-transform: uppercase;
+    color: red;
+    white-space: nowrap;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+.card-img-top{
+    min-height: 180px;
+    width: 100%;
+}
+
+.card-img-top p{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: .8rem;
+}
+
+.card-1{
+    background: url("../img/carro5.jpeg") no-repeat center/cover;
+    position: relative;
+    
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.card-2{
+    background: url("../img/carro6.jpeg") no-repeat center/cover;
+    position: relative;
+    
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.card-3{
+    background: url("../img/carro7.jpeg") no-repeat center/cover;
+    position: relative;
+    
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.card-4{
+    background: url("../img/carro8.jpeg") no-repeat center/cover;
+    position: relative;
+    
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+
+#dropdown-nav{
+    position: relative;
+}
+
+.dropdown{
+    position: absolute;
+    padding: 0;
+    background:  rgb(241, 23, 23);
+    z-index: 2;
+    width: 100%;
+    list-style-type: none;
+    top: -4px;
+    height: 50vh;
+
+    display: none;
+    
+    transition: all 4s ease;
+
+}
+
+.showmenu{
+    display: block;
+    transition: all 4s ease;
+
+}
+
+
+
+#dropdown-nav ul li{
+    padding: 15px 0;
+    margin: 0 20px;
+    width: 100%;
+}
+
+#dropdown-nav ul a {
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#dropdown-nav ul li i {
+    color: #FFF;
+    cursor: pointer;
+    display: block;
+    text-align: right;
+    margin-right: 60px;
+    margin-top: -25px;
+}
+
+#btn-pesquisar i{
+    color: #FFF;
+    font-size: 1.5rem;
+    position: absolute;
+    top: -50px;
+    left: 15px;
+    cursor: pointer;
+}
+
+#btn-icon{
+    font-size: 1.5rem;
+    color: #FFF;
+    
+}
+
+.overlay{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    opacity: .4;
+    z-index: 1;
+}
+
+
+@media(min-width: 1200px){
+    #dropdown-nav ul{
+        display: none;
+    }
+}
+
+@media(max-width: 1200px){
+    #menu{
+        display: none;
+    }
+    
+    #main-nav .navbar-brand{
+        margin: 0 auto;
+    }
+}
+
+@media(max-width: 990px){
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr; 
+    }
+
+    .grid-boxes{
+        position: relative;
+    
+        height: 50vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-end;
+        text-align: right;
+    }
+    
+    .grid-boxes h2{
+        color: #fff;
+        text-transform: uppercase;
+        text-align: right;
+        margin-right: 10px;
+        font-size: 1.5rem;
+    }
+
+    .grid-boxes p{
+        text-align: right;
+        margin: 0;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-right: 10px;
+        font-size: 1rem;
+    }
+
+    .box-1{
+        background: url("../img/carro1.jpeg") no-repeat center/cover;
+    }
+
+    .box-2{
+        background: url("../img/carro2.jpg") no-repeat center/cover;
+    }
+    
+    .box-3{
+        background: url("../img/carro3.jpg") no-repeat center/cover;
+    }
+    
+    .box-4{
+        background: url("../img/carro4.jpg") no-repeat center/cover;
+    }
+
+    #ad_fusca{
+        height: 50vh;
+        width: 100%;
+    }
+
+}
+
+
+@media(max-width: 600px){
+    body{
+        overflow-x: hidden;
+    }
+    
+    .grid-boxes{
+        width: 100vw;
+    }
+
+    #main-nav{
+        width: 100vw;
+    }
+
+    .container{
+        padding: 0;
+        margin: 0;
+    }
+
+    #banner{
+        width: 85%;
+    }
+
+    #ad_fusca{
+        height: 50vh;
+    }
+
+    .row{
+        margin-top: 30px;
+    }
+        
+    .grid-boxes h2{
+        color: #fff;
+        text-transform: uppercase;
+        text-align: right;
+        margin-right: 20px;
+    }
+
+    .grid-boxes p{
+        text-align: right;
+        margin: 0;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-right: 20px;
+    }
+
+    .card-body{
+        min-height: 0;
+        width: 100%;
+    }
+    
+    .card h5{
+        font-size: 1.2rem;
+    }
+    
+    .card p{
+        font-size: 1rem;
+    }
+    
+    .card a{
+        font-size: .9rem;
+        margin-bottom: 15px;
+    }
+    
+    .card-img-top{
+        width: 100vw;
+    }
+
+    .card-img-top p{
+        font-size: 1rem;
+    }
+
+    
+#dropdown-nav ul {
+    width: 100vw;
+}
+
+
+}
