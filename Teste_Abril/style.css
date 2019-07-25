@@ -250,17 +250,11 @@ body{
 
     display: none;
     
-    transition: all 4s ease;
-
 }
 
 .showmenu{
     display: block;
-    transition: all 4s ease;
-
 }
-
-
 
 #dropdown-nav ul li{
     padding: 15px 0;
@@ -295,18 +289,7 @@ body{
 #btn-icon{
     font-size: 1.5rem;
     color: #FFF;
-    
 }
-
-.overlay{
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    background-color: rgb(0, 0, 0);
-    opacity: .4;
-    z-index: 1;
-}
-
 
 @media(min-width: 1200px){
     #dropdown-nav ul{
@@ -457,10 +440,8 @@ body{
         font-size: 1rem;
     }
 
+    #dropdown-nav ul {
+        width: 100vw;
+    }
     
-#dropdown-nav ul {
-    width: 100vw;
-}
-
-
 }
